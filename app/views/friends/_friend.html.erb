@@ -1,24 +1,22 @@
 <div id="<%= dom_id friend %>">
-<table class="table table-light">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phone</th>
-      <th scope="col">twitter</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">#</th>
-      <td><%= friend.first_name %></td>
-      <td><%= friend.email %></td>
-      <td><%= friend.phone %></td>
-      <td><%= friend.twitter %></td>
-      <td><%= link_to "Show this friend", friend %></td>
-      <td><%= link_to "New friend", new_friend_path %></td>
-    </tr>
-  </tbody>
-</table>
+  <p>
+    <strong>First name:</strong>
+    <%= friend.first_name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= friend.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= friend.phone %>
+  </p>
+
+  <p>
+    <strong>Twitter:</strong>
+    <%= friend.twitter %>
+  </p>
+
 </div>
